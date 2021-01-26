@@ -7,6 +7,7 @@ they were added.
 The item added most recently, then, is at the back of a queue. 
 The item that was added earliest is at the *front* of a queue.
 
+QueueIn() function is used when inserting element / data in the queue.
 ```
 QueueIn()
 {
@@ -26,6 +27,9 @@ QueueIn()
 	arr[rear] = num;
 }
 ```
+
+QueueOut() function is used when removing an element to the queue.
+```
 QueueOut()
 {
 	if(front == -1 || front == rear+1)
@@ -39,6 +43,9 @@ QueueOut()
 	return;
 }
 ```
+
+Display() function is for displaying elements in the queue.
+```
 Display()
 {
 	if(front == -1 || front == rear+1)
@@ -51,4 +58,5 @@ Display()
 		System.out.println(arr[i]);
 	}
 }
-
+```
+###
